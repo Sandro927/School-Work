@@ -1,0 +1,14 @@
+/* Alejandro Mandala   036870111
+amandala@myseneca.ca
+Workshop 3 at home
+February 6th 2019
+*/
+
+In Workshop 3 we learned many key lessons regarding function templates. We learned how to create a class template which we used to generalize a class for an array of any type
+of element. We also learned how to properly create different types of constructors as well as several member functions and how to create, initialize and utilize objects of
+said template class.  We also learned how to specialize a class template for specific types. For example we specialized the sum() member function because the original sum()
+only worked well for adding certain types (int, etc) however we specialized it so to also work well with strings by adding or concatenating them together. We also learned how 
+to use our knowledge of inheritance to create several derived classes. We called the base template class constructor from within the derived template class constructor and how 
+to pass values to the base class constructor. An example of this is in LVPair.h line 38 in the 2 argument constructor. The reason we specialize the initial value for a summation
+is because we may have several different types, by specializing the starting values we can make sure that we set a proper safe empty state no matter what type of value is passed 
+in. For example for an integer we set it to 0 however for a string we set it to empty.
